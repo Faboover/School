@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ $1 = "ph" ]
+then
+	./gmod/srcds_run -game garrysmod -maxplayers 16 +host_workshop_collection 1570753070 +gamemode prop_hunt +map ph_holiday_gift
+elif [ $1 = "md" ]
+then
+	./gmod/srcds_run -game garrysmod -maxplayers 16 +host_workshop_collection 1570753070 +gamemode murder +map md_clue
+elif [ $1 = "hns" ]
+then
+	./gmod/srcds_run -game garrysmod -maxplayers 16 +host_workshop_collection 1570753070 +gamemode hideandseek +map gm_housewithgarden
+elif [ $1 = "ttt" ]
+then
+	./gmod/srcds_run -game garrysmod -maxplayers 16 +host_workshop_collection 1570753070 +gamemode terrortown +map gm_wwhouse
+else
+	./gmod/srcds_run -game garrysmod -maxplayers 16 +host_workshop_collection 1570753070 +gamemode sandbox +map gm_edventures
+fi
